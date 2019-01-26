@@ -2,14 +2,14 @@
 DCBlock 시스템에서 DCCaffe, DCAdmin에서 사용되는 Database DDL, DML 스키마를 정의
 
 ## DCAdmin Tables
-- admin
-- company
-- users
+- [admin](https://github.com/dcblock/DCDatabase/blob/master/admin.md)
+- [company](https://github.com/dcblock/DCDatabase/blob/master/company.md)
+- [users](https://github.com/dcblock/DCDatabase/blob/master/users.md)
 
 ## DCCaffe Tables
-- category
-- discount
-- menus
-- purchases
-- receipt_ids
-- temporary_uri
+- [category](https://github.com/dcblock/DCDatabase/blob/master/category.md)
+- [discount](https://github.com/dcblock/DCDatabase/blob/master/discount.md)
+- [menus](https://github.com/dcblock/DCDatabase/blob/master/menus.md)
+- [purchases](https://github.com/dcblock/DCDatabase/blob/master/purchases.md)
+- [receipt_ids](https://github.com/dcblock/DCDatabase/blob/master/receipts_ids.md)
+- [temporary_uri](https://github.com/dcblock/DCDatabase/blob/master/temporary_uri.md)
