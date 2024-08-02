@@ -15,7 +15,7 @@ SELECT pg_catalog.setval('public."Menus_Index_seq"', 88, true);
 
 ## menus table
 ```sql
-CREATE TABLE public.menus
+CREATE TABLE IF NOT EXISTS public.menus
 (
     name_en text COLLATE pg_catalog."default" NOT NULL,
     name_kr text COLLATE pg_catalog."default" NOT NULL,
@@ -31,9 +31,9 @@ CREATE TABLE public.menus
     opt_size integer NOT NULL,
     opt_type integer NOT NULL,
     event_name text COLLATE pg_catalog."default",
+    dc_dreamsecurity integer,
     CONSTRAINT "Index" PRIMARY KEY (index),
-    CONSTRAINT uk_category_code UNIQUE (category, code)
-,
+    CONSTRAINT uk_category_code UNIQUE (category, code),
     CONSTRAINT fk_category FOREIGN KEY (category)
         REFERENCES public.category (code) MATCH SIMPLE
         ON UPDATE NO ACTION
@@ -44,15 +44,18 @@ WITH (
 )
 TABLESPACE pg_default;
 
-ALTER TABLE public.menus
+ALTER TABLE IF EXISTS public.menus
     OWNER to manager;
 
-GRANT INSERT, SELECT, UPDATE, DELETE ON TABLE public.menus TO dccaffe;
+REVOKE ALL ON TABLE public.menus FROM dccaffe;
+
+GRANT DELETE, INSERT, SELECT, UPDATE ON TABLE public.menus TO dccaffe;
 
 GRANT ALL ON TABLE public.menus TO manager;
 
-CREATE INDEX "fki_Category" ON public.menus USING btree
-    (category)
+CREATE INDEX IF NOT EXISTS "fki_Category"
+    ON public.menus USING btree
+    (category ASC NULLS LAST)
     TABLESPACE pg_default;
 ```
 
