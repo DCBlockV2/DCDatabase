@@ -3,13 +3,13 @@ DCBlock 시스템에서 DCCaffe, DCAdmin에서 사용되는 Database DDL, DML �
 
 ## DCAdmin Tables
 - [admin](https://github.com/DCBlockV2/DCDatabase/blob/master/dcadmin/admin.md)
-- [company](https://github.com/dcblock/DCDatabase/blob/master/company.md)
-- [users](https://github.com/dcblock/DCDatabase/blob/master/users.md)
+- [company](https://github.com/DCBlockV2/DCDatabase/blob/master/dcadmin/company.md)
+- [users](https://github.com/DCBlockV2/DCDatabase/blob/master/dcadmin/users.md)
 
 ## DCCaffe Tables
-- [category](https://github.com/dcblock/DCDatabase/blob/master/category.md)
-- [discount](https://github.com/dcblock/DCDatabase/blob/master/discount.md)
-- [menus](https://github.com/dcblock/DCDatabase/blob/master/menus.md)
-- [purchases](https://github.com/dcblock/DCDatabase/blob/master/purchases.md)
-- [receipt_ids](https://github.com/dcblock/DCDatabase/blob/master/receipts_ids.md)
-- [temporary_uri](https://github.com/dcblock/DCDatabase/blob/master/temporary_uri.md)
+- [category](https://github.com/DCBlockV2/DCDatabase/blob/master/dccaffe/category.md)
+- [discount](https://github.com/DCBlockV2/DCDatabase/blob/master/dccaffe/discount.md)
+- [menus](https://github.com/DCBlockV2/DCDatabase/blob/master/dccaffe/menus.md)
+- [purchases](https://github.com/DCBlockV2/DCDatabase/blob/master/dccaffe/purchases.md)
+- [receipt_ids](https://github.com/DCBlockV2/DCDatabase/blob/master/dccaffe/receipt_ids.md)
+- [temporary_uri](https://github.com/DCBlockV2/DCDatabase/blob/master/dccaffe/temporary_uri.md)
