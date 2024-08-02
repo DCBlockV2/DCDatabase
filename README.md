@@ -2,7 +2,7 @@
 DCBlock 시스템에서 DCCaffe, DCAdmin에서 사용되는 Database DDL, DML 스키마를 정의
 
 ## DCAdmin Tables
-- [admin]([https://github.com/dcblock/DCDatabase/blob/master/admin.md](https://github.com/DCBlockV2/DCDatabase/blob/master/dcadmin/admin.md))
+- [admin](https://github.com/DCBlockV2/DCDatabase/blob/master/dcadmin/admin.md)
 - [company](https://github.com/dcblock/DCDatabase/blob/master/company.md)
 - [users](https://github.com/dcblock/DCDatabase/blob/master/users.md)
 
