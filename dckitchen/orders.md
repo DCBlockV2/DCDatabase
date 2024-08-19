@@ -6,14 +6,16 @@ DROP SEQUENCE IF EXISTS public.order_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.order_seq START 1;
 
-ALTER SEQUENCE public.order_seq
-    OWNER TO manager;
-
-GRANT ALL ON SEQUENCE public.order_seq TO manager;
+-- If create sequence with no owner, use this
+--ALTER SEQUENCE public.order_seq OWNER TO manager;
 
 GRANT UPDATE, SELECT ON SEQUENCE public.order_seq TO dckitchen;
 
-SELECT pg_catalog.setval('public.order_seq', 0, false);
+SELECT NEXTVAL('order_seq');
+SELECT CURRVAL('order_seq');
+SELECT SETVAL('order_seq', 1);
+--SELECT pg_catalog.setval('public.order_seq', 1, false);
+--SELECT pg_catalog.setval('public.order_seq', 1, true);
 ```
 
 ## orders table
@@ -39,9 +41,9 @@ TABLESPACE pg_default;
 
 ALTER TABLE public.orders OWNER to manager;
 
-GRANT INSERT, SELECT, UPDATE, DELETE ON TABLE public.orders TO dccaffe;
-
 GRANT ALL ON TABLE public.orders TO manager;
+
+GRANT INSERT, SELECT, UPDATE, DELETE ON TABLE public.orders TO dckitchen;
 
 CREATE INDEX order_date_idx 
     ON public.orders

@@ -15,4 +15,5 @@ DCBlock 시스템에서 DCCaffe, DCAdmin, DCKitchen에서 사용되는 Database 
 - [temporary_uri](https://github.com/DCBlockV2/DCDatabase/blob/master/dccaffe/temporary_uri.md)
 
 ## DCKitchen Tables
+- [preset](https://github.com/DCBlockV2/DCDatabase/blob/master/dckitchen/_preset.md)
 - [orders](https://github.com/DCBlockV2/DCDatabase/blob/master/dckitchen/orders.md)
